@@ -1,0 +1,17 @@
+<%inherit file="basepage.html"/>
+<%block name="content">
+<link rel="stylesheet" type="text/css" href="../static/css/datatable_paging.css">
+<link rel="stylesheet" type="text/css" href="../static/css/ttplayer.css">
+<link rel="stylesheet" type="text/css" href="../static/css/custommusic.css">
+<script type="text/javascript" src="../static/js/software/music_player/jquery.jplayer.js"></script>
+<script type="text/javascript" src="../static/js/software/music_player/ttw-music-player-min.js"></script>
+<script type="text/javascript" src="../static/js/software/jquery.media.js"></script> 
+<script type="text/javascript" src="../static/js/software/jquery.metadata.js"></script> 
+
+<h2  style="text-align:center;color: black;font-family:Arial;font-weight:bold;font-size:18px"> <br>Music Page </h2>
+<div style="text-align:center;color: black;font-family:Arial;font-weight:bold;padding-top:20px">${musicname}</div>
+
+<div id="musiclist"></div>
+<script type="text/javascript" src="../static/js/music.js" onload="loadmusic('/loadmusic/${musicid}','musiclist');"></script>
+
+</%block>
